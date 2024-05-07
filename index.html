@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ampere and Biot-Savart Laws Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Ampere and Biot-Savart Laws Quiz</h1>
+    <div class="intro">
+        <p>Welcome to the interactive quiz on Ampere's and Biot-Savart's laws! Solve the problems below to learn more about electromagnetic principles. Each correct answer will reveal a letter. Collect all letters to spell the mystery word. Good luck! Note: answer all questions in standard notation</p>
+    </div>
+    <form id="quizForm">
+        <!-- Question 1 -->
+        <div class="question">
+            <p>1. An infinitely long wire has a current of 3A running through it. Calculate the magnetic field at a distance 2cm away from the wire. round to four decimal places</p>
+            <input type="number" id="q1" step="any"><button onclick="checkAnswer(1, .0003); return false;">Check</button>
+            <span id="result1" class="hidden"></span>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <p>2. A long solenoid with a cross-sectional area of 0.01 m² consists of 1000 turns of wire. When a current of 3 A is passed through the wire, calculate the magnetic field inside the solenoid. Assume the solenoid is air-filled. round to five decimal places</p>
+            <input type="text" id="q2"><button onclick="checkAnswer(2, .00378); return false;">Check</button>
+            <span id="result2" class="hidden"></span>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <p>3. A wire with a length of 1 cm carries a current of 2 A. Calculate the magnetic field at point P, which is 1 meter from the wire in the x-direction.</p>
+            <img src="https://openstax.org/apps/archive/20240226.174525/resources/d08c5ceba31336d4b52498911d82f9dfcae81e20" alt="Description of the image">
+        
+            <input type="text" id="q3"><button onclick="checkAnswer(3, .000000002); return false;">Check</button>
+    
+            <span id="result3" class="hidden"></span>
+        </div>
+
+        <!-- Question 4-5: PLACEHOLDER -->
+        <div class="question">
+            <p>4.A solenoid has a B field of .01885 Teslas and a current of 30 Amps. How many coils are in the solenoid. give the closest integer </p>
+            <input type="text" id="q4"><button onclick="checkAnswer(4,500); return false;">Check</button>
+            <span id="result4" class="hidden"></span>
+        </div>
+
+        <div class="question">
+            <p>5. What is needed to use Ampere's law? Hint: the answer is a one word attribute</p>
+            <input type="text" id="q5"><button onclick="checkAnswer(5, 'symmetry'); return false;">Check</button>
+            <span id="result5" class="hidden"></span>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <p>6. A wire that carries a current I through a circular arc with radius R and an angle θ. Find an expression for the magnetic field at point P.</p>
+            <img src="https://openstax.org/apps/archive/20240226.174525/resources/8d0bc524f77b0235ab68f2a3a16c17d725a72b92" alt="Description of the image">
+            <select id="q6">
+                <option value="">--Please choose an option--</option>
+                <option value="Option1">B=μ0Iθ / 4πr.</option>
+                <option value="Option2">B = μ0Iθ / 8πr</option>
+                <option value="Option3">B = μ0Iθ / πr^2</option>
+            </select>
+            <button onclick="checkAnswer(6, 'Option1'); return false;">Check</button>
+            <span id="result6" class="hidden"></span>
+        </div>
+
+        <!-- Question 7: Placeholder -->
+        <div class="question">
+            <p>7. Consider a circular current loop of radius R=10cm carrying a current I=5A. Using the Biot-Savart law, find the magnetic field at the center of the loop. <strong>Answer in micro(μ) teslas</strong></p>
+            <input type="text" id="q7"><button onclick="checkAnswer(7, 31.4); return false;">Check</button>
+            <span id="result7" class="hidden"></span>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <p>8. A straight, infinitely long wire carries a steady current I. According to Biot-Savart's Law, which of the following statements best describes the nature of the magnetic field produced by the current in the wire at a point in the surrounding space?</p>
+
+            <select id="q8">
+                <option value="">--Please choose an option--</option>
+                <option value="Option1">The magnetic field is radial, decreasing in magnitude with distance from the wire.</option>
+                <option value="Option2">The magnetic field is circular, with its magnitude inversely proportional to the distance from the wire.</option>
+                <option value="Option3">The magnetic field is linear, directly proportional to the distance from the wire.</option>
+            </select>
+            <button onclick="checkAnswer(8, 'Option2'); return false;">Check</button>
+            <span id="result8" class="hidden"></span>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <p>9. When can the simplified version of the Biot-Savart Law be used?</p>
+            <select id="q9">
+                <option value="">--Please choose an option--</option>
+                <option value="Option1">When you have a long, straight wire.</option>
+                <option value="Option2">When you have a curvy wire</option>
+                <option value="Option3">When you have a wire that loops into itself</option>
+            </select>
+            <button onclick="checkAnswer(9, 'Option1'); return false;">Check</button>
+            <span id="result9" class="hidden"></span>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <p>10. Calculate the magnitude of the magnetic field at a point located R=0.05m perpendicular from an infinitely long straight wire carrying a current I=8A, using the Biot-Savart law. <strong>Answer in micro(μ) teslas</strong></p>
+            <input type="number" id="q10" step="any"><button onclick="checkAnswer(10, 32); return false;">Check</button>
+            <span id="result10" class="hidden"></span>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
