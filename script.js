@@ -17,3 +17,13 @@ function checkAnswer(questionNumber, correctAnswer) {
         resultSpan.style.display = 'block';
     }
 }
+
+
+function revealAnswers() {
+    var answersList = document.getElementById("answersList");
+    if (answersList.style.display === "none") {
+        answersList.style.display = "block";
+    } else {
+        answersList.style.display = "none";
+    }
+}
